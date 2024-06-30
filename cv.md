@@ -12,6 +12,7 @@ Software QA Engineer with a background in the finance industry. I gained valuabl
 * English - C1 
 * Romanian - B1
 * Ukrainian - A2
+
 ### Quality Assurance: 
 Understanding of SDLC, STLC; BTS (Jira, Youtrack); TMS (Qase, TestIT); DBMS (MySQL); API testing (Postman, Swagger, Charles Proxy); Devtools; Android Studio (Gaining and reading logs); Git; Bash;
 
