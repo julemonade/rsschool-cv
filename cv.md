@@ -2,11 +2,15 @@
 
 <div align="center"> <a href="mailto:julemonadee@gmail.com"> julemonadee@gmail.com</a> | <a href="https://www.linkedin.com/in/iulianicolaeva/"> linkedin.com/iulianicolaeva/</a> | <a href="https://t.me/julemonade"> t.me/julemonade </a> | +373 69 065 994 </div>
 
+
 Software QA Engineer with a background in the finance industry. I gained valuable experience as a QA Engineer at ITX Company, where I developed my hard skills: test design techniques, writing testing documentation and web/mobile testing. To put my skills to the next level I'm learning Javascript for further testing automation purposes.
 ***
 ## KNOWLEDGE, SKILLS AND ABILITIES
 ### Languages: 
-Russian (native), English (C1), Romanian (B1), Ukrainian (A2)
+* Russian - native
+* English - C1 
+* Romanian - B1
+* Ukrainian - A2
 ### Quality Assurance: 
 Understanding of SDLC, STLC; BTS (Jira, Youtrack); TMS (Qase, TestIT); DBMS (MySQL); API testing (Postman, Swagger, Charles Proxy); Devtools; Android Studio (Gaining and reading logs); Git; Bash;
 ***
