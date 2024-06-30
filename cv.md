@@ -3,7 +3,9 @@
 <div align="center"> <a href="mailto:julemonadee@gmail.com"> julemonadee@gmail.com</a> | <a href="https://www.linkedin.com/in/iulianicolaeva/"> linkedin.com/iulianicolaeva/</a> | <a href="https://t.me/julemonade"> t.me/julemonade </a> | +373 69 065 994 </div>
 
 Software QA Engineer with a background in the finance industry. I gained valuable experience as a QA Engineer at ITX Company, where I developed my hard skills: test design techniques, writing testing documentation and web/mobile testing. To put my skills to the next level I'm learning Javascript for further testing automation purposes.
+
 ***
+
 ## KNOWLEDGE, SKILLS AND ABILITIES
 ### Languages: 
 * Russian - native
@@ -12,7 +14,9 @@ Software QA Engineer with a background in the finance industry. I gained valuabl
 * Ukrainian - A2
 ### Quality Assurance: 
 Understanding of SDLC, STLC; BTS (Jira, Youtrack); TMS (Qase, TestIT); DBMS (MySQL); API testing (Postman, Swagger, Charles Proxy); Devtools; Android Studio (Gaining and reading logs); Git; Bash;
+
 ***
+
 ## PROFESSIONAL EXPERIENCE 
 ### Mar 2023 – present | ITX Company (Marketing platforms testing. Web/Mobile. Different locales)
 As a member of the QA team, I was responsible for starting testing on projects from scratch:
@@ -38,7 +42,9 @@ As Accountant:
 * Performing accounting operations, including preparation of financial statements and analysis of financial performance.
 * Developing budgets and monitoring financial flows.
 * Maintaining records of income and expenses, as well as monitoring tax payments.
+
 ***
+
 ## EDUCATION
 ### Mar 2023 - Jun 2023 — Artsiom Rusau Functional Testing course Certificate
 Personal mentoring by a QA expert with 8+ years of experience. Deep dive into web application testing, testing design methods (BVA, pairwise, decision tables, state transition, equivalents classes), writing test documentation.
