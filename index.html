@@ -1,82 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="style.css">
-        <title>CV</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV Layout</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="header">
-    <h1>Iulia Nicolaeva</h1>
-    <h2>QA Engineer</h2>
-</div>
-<div class="summary">
-<p> I am a dedicated and professional Software QA Engineer with a background in the finance industry.
-    I gained valuable experience as a QA Engineer at ITX Company, where I honed my skills in test design techniques, writing testing documentation, and web/mobile testing.
-    Strong creative and analytical skills. Team player with an eye for detail.</p>
-</div>
-<div class="experience">
-<h3>Experience</h3>
-            <h4>Mar 2023 &ndash; present | ITX Company (Marketing platforms testing. Web/Mobile. Different locales)</h4>
-            <h5>As a member of the QA team, I was responsible for starting testing on projects from scratch:</h5>
-            <ul>
-                <li>Functional and non-functional testing of web/mobile applications;</li>
-                <li>Creating testing artefacts from scratch (checklists, bug reports, glossary, mind maps etc.);</li>
-                <li>Preparing reports and reported to QA lead;</li>
-                <li>Working closely with developers and QA engineers on a project team to be a part of various product initiatives that powers financial markets data;</li>
-            </ul>
-            <h4>Feb 2019 &ndash; Apr 2022 | Delmark Games (Mobile Indie project)</h4>
-                <h5>As QC specialist I was responsible for testing of game mechanics, interface, and gameplay.</h5>
-            <ul>
-                <li>Functional testing of the game;</li>
-                <li>Exploratory, beta, smoke, retest and regression testing;</li>
-                <li>Identifying, documenting and tracking bugs;</li>
-                <li>Checking compatibility with various devices and operating systems.</li>
-            </ul>
-            <h4>Aug 2016 &ndash; Feb 2022 | Department of Youth, Education and Sport, Chisinau, Moldova</h4>
-                <h5>As QC specialist:</h5>
+    <header class="header">
+        <div class="header-content">
+            <nav class="nav-list">
+              <a href="#skills">Skills</a>  |
+              <a href="#education">Education</a>  |
+              <a href="#experience">Experience</a>  |
+              <a href="#contacts">Contacts</a>
+            </nav>
+          </div>
+      </header>
+    <main>
+    <div class="container">
+        <div class="top-section">
+                <h1>Iulia Nicolaeva</h1>
+                <h2>QA Engineer</h2>
+        </div>
+        <div class="columns">
+            <div class="left-column">
+                <div class="image">
+                    <img src="img/photo.jpg" alt="Profile Photo" class="photo">
+                </div>
+                <section id="contacts">
+                <div class="section contact">
+                    <h3>CONTACTS</h3>
+                    <ul class="contact__wrapper">
+                        <li class="contact__block">
+                            <div class="contact__image contact__image_github">
+                                <img src="img/github30.png" alt="GitHub Badge">
+                            </div>
+                            <div class="contact__text">
+                                <a href="https://github.com/julemonade" target="_blank" class="contact__link">github.com/julemonade</a>
+                            </div>
+                        </li>
+                        <li class="contact__block">
+                            <div class="contact__image contact__image_telegram">
+                                <img src="img/telegram30.png" alt="Telegram Badge">
+                            </div>
+                            <div class="contact__text">
+                                <a href="https://t.me/julemonade" target="_blank" class="contact__link">t.me/julemonade</a>
+                            </div>
+                        </li>
+                        <li class="contact__block">
+                            <div class="contact__image contact__image_linkedin">
+                                <img src="img/icons8-linkedin-30.png" alt="Linkedin Badge">
+                            </div>
+                            <div class="contact__text">
+                                <a href="https://www.linkedin.com/in/iulianicolaeva/" class="contact__link">linkedin.com/iulianicolaeva</a>
+                            </div>
+                        </li>
+                        <li class="contact__block">
+                            <div class="contact__image contact__image_email">
+                                <img src="img/icons8-mail-30.png" alt="Mail Badge">
+                            </div>
+                            <div class="contact__text">
+                                <a href="mailto:julemonadee@gmai.com" class="contact__link">julemonadee@gmai.com</a>
+                            </div>
+                        </li>
+                        <li class="contact__block">
+                            <div class="contact__image contact__image_map">
+                                <img src="img/icons8-location-30.png" alt="Location Badge">
+                            </div>
+                            <div class="contact__text">
+                                <p class="contact__paragraph">Moldova, Chisinau</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                </section>
+                <section id="skills">
+                <div class="section skills">
+                    <h3>SKILLS</h3>
+                    <div class="skills-separator"></div>
+                    <h4>Quality Assurance:</h4>
+                    <ul>
+                        <li>Understanding of SDLC, STLC</li>
+                        <li>BTS (Jira, Youtrack)</li>
+                        <li>TMS (Qase, TestIT)</li>
+                        <li>DBMS (MySQL)</li>
+                        <li>API testing (Postman, Swagger, Charles Proxy)</li>
+                        <li>Chrome Devtools</li>
+                        <li>Android Studio (Gaining and reading logs)</li>
+                        <li>Git</li>
+                        <li>Terminal (CLI)</li>
+                    </ul>
+                    <div class="skills-separator"></div>
+                        <h4>Languages:</h4>
+                    <ul>
+                        <li>Russian – native</li>
+                        <li>English – C1</li>
+                        <li>Romanian – B1</li>
+                        <li>Ukrainian – A2</li>
+                    </ul>
+                </div>
+                </section>
+                <section id="education">
+                <div class="education">
+                    <h3>EDUCATION</h3>
+                        <h4>The Rolling Scopes School — <br>JS/Frontend course</h4>
+                        <p>Jul 2024 - present</p>
+                        <h4>Artsiom Rusau — <br>Functional Testing course</h4>
+                        <p>Mar 2023 – Jun 2023</p>
+                        <h4>Vadim Ksendzov — <br>Software Testing course</h4>
+                        <p>Nov 2022 – Feb 2023</p>
+                        <h4>Academy of Economic Studies, Chisinau, Moldova</h4>
+                        <p>Master’s degree in Financial Management and Business Accounting.
+                        <br>Bachelor’s degree in Finance.
+                        <br>Sep 2013 – May 2018</p>
+                </div>
+                </section>
+            </div>
+        <div class="right-column">
+            <div class="summary">
+                <p>I am a dedicated and professional Software QA Engineer with a background in the finance industry. I gained valuable experience as a QA Engineer at ITX Company, where I honed my skills in test design techniques, writing testing documentation, and web/mobile testing. Strong creative and analytical skills. Team player with an eye for detail.</p>
+            </div>
+            <section id="experience">
+            <div class="section experience">
+                <h3>EXPERIENCE</h3>
+                    <h4>ITX Company (Marketing platforms testing. Web/Mobile. Different locales) <br>Mar 2023 – present</h4>
+                        <h5>As a member of the QA team, I was responsible for starting testing on projects from scratch:</h5>
+                <ul>
+                    <li>Functional and non-functional testing of web/mobile applications;</li>
+                    <li>Creating testing artefacts from scratch (checklists, bug reports, glossary, mind maps etc.);</li>
+                    <li>Preparing reports and reported to QA lead;</li>
+                    <li>Working closely with developers and QA engineers on a project team to be a part of various product initiatives that powers financial markets data;</li>
+                </ul>
+                    <div class="job-separator"></div>
+                    <h4>Delmark Games (Mobile Indie project) <br>Feb 2019 – Apr 2022</h4>
+                        <h5>As QC specialist I was responsible for testing of game mechanics, interface, and gameplay.</h5>
+                <ul>
+                    <li>Functional testing of the game;</li>
+                    <li>Exploratory, beta, smoke, retest and regression testing;</li>
+                    <li>Identifying, documenting and tracking bugs;</li>
+                    <li>Checking compatibility with various devices and operating systems.</li>
+                </ul>
+                    <div class="job-separator"></div>
+                    <h4>Department of Youth, Education and Sport, Chisinau, Moldova <br> Aug 2016 – Feb 2022</h4>
+                        <h5>As QC specialist:</h5>
                 <ul>
                     <li>Collaboration with the development team to determine requirements of the new accounting software.</li>
                     <li>Documenting bug reports of the software, and liaised with the development department for their resolution.</li>
                     <li>Provided training and support to my colleagues on the new accounting software, helping them understand its functionalities and processes.</li>
                 </ul>
-        <h5>As Accountant:</h5>
+                    <div class="job-separator_1"></div>
+                        <h5>As Accountant:</h5>
                 <ul>
                     <li>Performing accounting operations, including preparation of financial statements and analysis of financial performance.</li>
                     <li>Developing budgets and monitoring financial flows.</li>
                     <li>Maintaining records of income and expenses, as well as monitoring tax payments.</li>
                 </ul>
-</div>
-<div class="education">
-            <h3>EDUCATION</h3>
-            <h4>Mar 2023 &ndash; Jun 2023 &mdash; Artsiom Rusau Functional Testing course Certificate</h4>
-            Personal mentoring by a QA expert with 8+ years of experience. Deep dive into web application testing, testing design methods (BVA, pairwise, decision tables, state transition, equivalents classes), writing test documentation.
-            <h4>Nov 2022 &ndash; Feb 2023 &mdash; Vadim Ksendzov Software Testing course</h4>
-            Mentoring by a QA expert with 10+ years of experience. Hands-on experience with API testing using Postman, iOS/Android mobile testing (including XCode, Android Studio and ADB usage), sniffing HTTP web traffic (Charles and Fiddler), database management (PostgreSQL, Redis), bash scripting.
-            <h4>Sep 2013 &ndash; May 2018 &mdash; Academy of Economic Studies, Chisinau, Moldova</h4>
-            Master&rsquo;s degree in Financial Management and Business Accounting. Bachelor&rsquo;s degree in Finance.
-</div>
-<div class="skills">
-            <h3>KNOWLEDGE, SKILLS AND ABILITIES</h3>
-                <h4>Quality Assurance:</h4>
-                <ul>
-                <li>Understanding of SDLC, STLC;</li>
-                <li>BTS (Jira, Youtrack);</li>
-                <li>TMS (Qase, TestIT);</li>
-                <li>DBMS (MySQL);</li>
-                <li>API testing (Postman, Swagger, Charles Proxy);</li>
-                <li>Chrome Devtools;</li>
-                <li>Android Studio (Gaining and reading logs);</li>
-                <li>Git;</li>
-                <li>Bash;</li>
-                </ul>
-                <h4>Languages:</h4>
-                <ul>
-                    <li>Russian &ndash; native</li>
-                    <li>English &ndash; C1</li>
-                    <li>Romanian &ndash; B1</li>
-                    <li>Ukrainian &ndash; A2</li>
-                </ul>
-</div>
+            </div>
+        </section>
+        </div>
+    </div>
+  </div>
+</main>
+<footer class="footer">
+    <div class="footer-content">
+    <a href="https://github.com/julemonade" target="_blank" class="github-link">GitHub</a>
+    <p>&copy; 2024 All rights reserved</p>
+    <a href="https://rs.school/courses/javascript-ru" target="_blank">
+    <img src="img/rs-school-logo.svg" alt="RS School Logo" class="school-logo">
+    </a>
+    </div>
+  </footer>
 </body>
 </html>
