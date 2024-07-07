@@ -4,136 +4,355 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* Body styles */
+
+/*Main*/
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .section {
+    width: 100%;
+  }
+}
+
+/* Container styles */
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 0 auto; /*центрировать всю информацию*/
+}
+
+/* Top section - Name, position */
+.top-section {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #4d5056;
+  border-bottom: 2px solid #ddd;
+}
+
+.top-section {
+  font-family: Garamond, serif;
+  text-align: center;
+  margin-bottom: 0px;
+}
+.top-section h1 {
+  font-size: 2.5em;
+  color: #ffffff;
+}
+.top-section h2 {
+  font-size: 1.5em;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+/*Основная часть*/
 body {
   font-family: Garamond, sans-serif;
   line-height: 1.2;
   background-color: #f4f4f4;
-  padding: 20px;
+  padding: 20px; /* Добавляем внутренние поля вокруг содержимого страницы */
+  display: flex;
+  justify-content: center; /* Центрируем содержимое по горизонтали */
 }
-/* Header styles */
-.header {
-  text-align: center;
-  margin-bottom: 20px;
-}
-.header h1 {
-  font-size: 2.5em;
-  color: #333;
-}
-.header h2 {
-  font-size: 1.5em;
-  color: #666;
-  margin-bottom: 10px;
-}
-/* Summary styles */
+
+/* Summary style */
 .summary {
+  font-family: Garamond, sans-serif;
   background-color: #fff;
   padding: 20px;
   border-radius: 5px;
   margin-bottom: 20px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 .summary p {
   font-size: 1.1em;
   color: #333;
   line-height: 1.8;
 }
-/* Experience styles */
-.experience {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 5px;
-  margin-bottom: 20px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+/* Columns layout */
+.columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-.experience h3 {
+
+/* Left column styles */
+.left-column {
+  width: 27%;
+  padding: 20px;
+  background-color: #f6eae3;
+}
+
+.left-column .image {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.left-column .photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 3px solid #666;
+  object-fit: cover;
+}
+
+.left-column .section {
+  margin-bottom: 30px;
+}
+
+.left-column .section h3 {
   font-size: 1.8em;
   color: #333;
+  text-align: center;
   margin-bottom: 15px;
 }
-.experience h4 {
+
+.left-column .section h4 {
   font-size: 1.4em;
   color: #555;
   margin-bottom: 10px;
 }
-.experience h5 {
+
+.left-column .section ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.left-column .section li {
+  font-size: 1.1em;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Стили для секции SKILLS */
+.left-column .section.skills h3 {
+  color: #333; /* Цвет текста */
+  font-size: 1.8em;
+  margin: 20px auto 0; /* Верхний отступ 20px, автоматическое центрирование по горизонтали */
+  text-align: center; /* Выравнивание текста по центру */
+}
+
+.left-column .section.skills h4 {
+  margin-top: 5px; /* Верхний отступ между заголовками */
+  font-size: 1.2em;
+  color: #555;
+  text-align: left; /* Выравнивание по левому краю */
+  margin-left: 20px; /* Сдвиг к центру */
+}
+
+.left-column .section.skills ul {
+  list-style-type: disc;
+  margin-left: 50px;
+}
+
+.left-column section.skills li {
+  font-size: 1.1em;
+  color: #333;
+  line-height: 1.6;
+}
+/* Стили для секции EDUCATION */
+.left-column .education h3 {
+  color: #333; /* Цвет текста */
+  font-size: 1.8em;
+  margin: 20px auto 0; /* Верхний отступ 20px, автоматическое центрирование по горизонтали */
+  text-align: center; /* Выравнивание текста по центру */
+}
+
+.left-column .education h4 {
+  margin-top: 15px; /* Верхний отступ между заголовками */
+  font-size: 1.2em;
+  color: #555;
+  margin-left: 20px;
+}
+
+.left-column .education p {
+  margin-bottom: 0px; /* Нижний отступ между заголовками */
+  font-size: 1.1em;
+  color: #333;
+  margin-left: 20px;
+}
+
+/* Стили для разделителей между блоками навыков */
+.left-column .section.skills .skills-separator {
+  height: 10px; /* Высота пустой строки */
+  margin-bottom: 10px; /* Отступ снизу */
+}
+
+/* Right column styles */
+.right-column {
+  width: 73%;
+  padding: 20px;
+}
+
+.right-column .section {
+  margin-bottom: 30px;
+  padding: 15px; /* Внутренний отступ */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень для объема */
+}
+
+.right-column .section h3 {
+  background-color: #F6EAE3; /* Цвет фона, как у узкой колонки */
+  color: #333; /* Цвет текста */
+  font-size: 1.8em; /*Размер текста */
+  padding: 10px 20px; /* Поля вокруг текста */
+  border-radius: 5px; /* Закругление углов */
+  margin-bottom: 10px; /* Отступ снизу */
+}
+
+.right-column .section h4 {
+  font-size: 1.4em;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.right-column .section h5 {
   font-size: 1.2em;
   color: #777;
   margin-bottom: 5px;
 }
-.experience ul {
+
+.right-column .section ul {
   list-style-type: disc;
   margin-left: 20px;
 }
-.experience li {
+
+.right-column .section li {
   font-size: 1.1em;
   color: #333;
   line-height: 1.6;
 }
-/* Education styles */
-.education {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 5px;
-  margin-bottom: 20px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+/* Стили для разделителей между блоками опыта работы */
+.right-column .section .job-separator {
+  height: 20px; /* Высота пустой строки */
+  margin-bottom: 30px; /* Отступ снизу */
 }
-.education h3 {
-  font-size: 1.8em;
-  color: #333;
-  margin-bottom: 15px;
-}
-.education h4 {
-  font-size: 1.4em;
-  color: #555;
-  margin-bottom: 10px;
-}
-.education p {
-  font-size: 1.1em;
-  color: #333;
-  line-height: 1.8;
-}
-/* Skills styles */
-.skills {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 5px;
-  margin-bottom: 20px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-.skills h3 {
-  font-size: 1.8em;
-  color: #333;
-  margin-bottom: 15px;
-}
-.skills h4 {
-  font-size: 1.4em;
-  color: #555;
-  margin-bottom: 10px;
+.right-column .section .job-separator_1 {
+  height: 10px; /* Высота пустой строки */
+  margin-bottom: 10px; /* Отступ снизу */
 }
 
-.skills ul {
-  list-style-type: none;
+/* Баджи для контактов */
+.contact__block {
+  display: flex; /* Делаем элементы flex-контейнером */
+  align-items: center; /* Выравниваем элементы по центру вертикально */
 }
 
-.skills li {
-  font-size: 1.1em;
-  color: #333;
-  line-height: 1.6;
-  margin-bottom: 5px;
+.contact__image {
+  width: 20px; /* Ширина изображения */
+  height: 20px; /* Высота изображения */
+  margin-right: 10px; /* Отступ справа от изображения */
 }
-<<<<<<< HEAD
-=======
-=======
-body {
-    background-color: lightblue;
-  }
-h1 {
-    color: white;
-    text-align: center;
-  }
-p {
-    font-family: verdana;
-    font-size: 20px;
-  }
->>>>>>> fdec6e4953406f73ae19f1dd7bf7f5d456434918
+
+.contact__image img {
+  display: block; /* Убираем пробелы вокруг изображения */
+  width: 100%; /* Заполнение ширины контейнера */
+  height: auto; /* Автоматическая высота */
+}
+
+/*Header*/
+.header {
+  background-color: #F6EAE3;
+  color: #333;
+  text-align: center;
+  font-size: 1.2em;
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: flex-end; /* Выравнивание по правому краю */
+  align-items: center;
+  margin-left: auto; /* Смещение вправо */
+}
+
+.nav-link {
+  margin: 10px;
+  padding: 15px 20px;
+  line-height: 1;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  background-color: #ddd;
+  color: #333;
+  border-color: #999;
+}
+
+.section-item a {
+  color: #829985;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.section-item a:hover {
+  color: #4d2323;
+}
+
+/*Footer*/
+body { /*Прижать footer*/
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.footer {
+  background-color: #4d5056;
+  color: #fff;
+  text-align: center;
+  font-size: 1.2em;
+  padding: 20px;
+  width: 100%; /* Ширина футера будет равна ширине родительского элемента */
+  max-width: 1200px; /* Максимальная ширина футера */
+  margin: 0 auto; /* Центрирование футера по горизонтали */
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; /* Равномерно распределяем элементы по горизонтали */
+  align-items: center; /* Выравниваем элементы по центру вертикально */
+}
+
+.school-logo {
+  width: 120px; /* Настройте ширину логотипа по необходимости */
+  height: auto;
+}
+
+.github-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.github-link:hover {
+  text-decoration: underline;
+}
